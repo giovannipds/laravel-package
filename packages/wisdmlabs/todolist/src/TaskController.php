@@ -20,9 +20,9 @@ class TaskController extends Controller
         return view('wisdmlabs.todolist.list', compact('tasks', 'submit'));
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $input = Request::all();
+        $input = $request->all();
         Task::create($input);
         return redirect()->route('task.create');
     }
@@ -35,9 +35,9 @@ class TaskController extends Controller
         return view('wisdmlabs.todolist.list', compact('tasks', 'task', 'submit'));
     }
 
-    public function update($id)
+    public function update(Request $request, $id)
     {
-        $input = Request::all();
+        $input = $request->all();
         $task = Task::findOrFail($id);
         $task->update($input);
         return redirect()->route('task.create');

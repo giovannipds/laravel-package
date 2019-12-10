@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace WisdmLabs\TodoList;
 
 use Illuminate\Http\Request;
 

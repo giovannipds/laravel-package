@@ -10,5 +10,17 @@
     "minimum-stability": "dev",
     "require": {
         "laravelcollective/html": "^6.0@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WisdmLabs\\TodoList\\TodolistServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "WisdmLabs\\TodoList\\": "src/"
+        }
     }
 }

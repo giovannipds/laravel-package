@@ -1,2 +1,2 @@
 <?php
-Route::resource('/task', 'Wisdmlabs\Todolist\TodolistController');
+Route::resource('/task', 'Wisdmlabs\Todolist\TaskController');

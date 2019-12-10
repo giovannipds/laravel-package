@@ -13,7 +13,7 @@ class TodolistServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('wisdmLabs\todolist\TodolistController');
+        $this->app->make('WisdmLabs\TodoList\TaskController');
     }
 
     /**

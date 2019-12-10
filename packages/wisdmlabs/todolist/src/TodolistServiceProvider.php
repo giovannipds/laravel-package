@@ -1,6 +1,6 @@
 <?php
 
-namespace wisdmlabs\todolist;
+namespace WisdmLabs\TodoList;
 
 use Illuminate\Support\ServiceProvider;
 
